@@ -1,7 +1,7 @@
 ## Multiveso
 
 Multiverso festival website.
-Made with React and Gatsby.
+Built with React and Gatsby.
 
 ##### Setup
 
