@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Monoela';
+    src: url('./fonts/Monoela-Thin.woff2') format('woff2'),
+        url('./fonts/Monoela-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monoela';
+    src: url('./fonts/Monoela-Medium.woff2') format('woff2'),
+        url('./fonts/Monoela-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monoela';
+    src: url('./fonts/Monoela-Bold.woff2') format('woff2'),
+        url('./fonts/Monoela-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monoela';
+    src: url('./fonts/Monoela-Regular.woff2') format('woff2'),
+        url('./fonts/Monoela-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monoela';
+    src: url('./fonts/Monoela-Light.woff2') format('woff2'),
+        url('./fonts/Monoela-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
