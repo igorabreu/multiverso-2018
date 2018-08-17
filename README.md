@@ -4,10 +4,8 @@ Multiverso festival website.
 
 Built with React and Gatsby.
 
-##### Setup
-
 ```bash
-# install dependencies
+# install gatsby
 `npm install --global gatsby-cli`
 
 # Develop mode
