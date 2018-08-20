@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import AnimatedLogo from '../components/AnimatedLogo'
-import BackgroundAnimation from '../components/BackgroundAnimation'
+import Hero from '../sections/Hero'
+import Locations from '../sections/Locations'
+import Schedule from '../sections/Schedule'
+
 import '../styles/base.scss'
 import './style.scss'
 
@@ -16,8 +18,9 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <AnimatedLogo siteTitle={data.site.siteMetadata.title} />
-    <BackgroundAnimation />
+    <Hero data={data} />
+    <Locations />
+    <Schedule />
   </div>
 )
 
