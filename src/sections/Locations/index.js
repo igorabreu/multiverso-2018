@@ -5,7 +5,7 @@ import './style.scss'
 
 const Locations = ({ data }) => (
   <div className="Locations">
-    <Map />
+    <Map data={data} />
   </div>
 )
 

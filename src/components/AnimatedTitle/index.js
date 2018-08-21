@@ -3,7 +3,7 @@ import anime from 'animejs'
 
 import './style.scss'
 
-class AnimatedLogo extends Component {
+class AnimatedTitle extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -20,6 +20,7 @@ class AnimatedLogo extends Component {
 
   componentDidMount() {
     this.handleNumberAnimation()
+    //navigator.geolocation.getCurrentPosition(position => console.log(position))
   }
 
   handleNumberAnimation = () => {
@@ -49,12 +50,16 @@ class AnimatedLogo extends Component {
 
   render() {
     const { number } = this.state
+    const { big } = this.props
     return (
-      <div className="AnimatedLogo" onClick={this.handleNumberAnimation}>
+      <div
+        className={big ? 'AnimatedLogo' : 'AnimatedLogoSmall'}
+        onClick={this.handleNumberAnimation}
+      >
         <h1 className="logo-word"> Multiverso</h1>
         <h1 className="logo-number">{number}</h1>
       </div>
     )
   }
 }
-export default AnimatedLogo
+export default AnimatedTitle

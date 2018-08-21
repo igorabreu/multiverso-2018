@@ -1,0 +1,26 @@
+@import '../../styles/_variables';
+
+.MapMarker {
+  color: $cyan;
+  width: auto;
+  margin-top: 2px;
+  font-weight: lighter;
+  cursor: pointer;
+  .marker {
+    background-color: $cyan;
+    width: 10px;
+    height: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    &:hover {
+      width: 40px;
+      height: 40px;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+  .titleLeft {
+    transform: translate(-50px, -20px);
+  }
+  .titleUpperLeft {
+    transform: translate(-60px, -10px);
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.Menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: $white;
+  list-style: none;
+  z-index: 999;
+  font-size: 1.1rem;
+  font-weight: normal;
+  cursor: pointer;
+  li {
+    letter-spacing: 4%;
+    line-height: 35px;
+  }
+}

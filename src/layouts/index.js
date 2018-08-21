@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Menu from '../components/Menu'
+
 import Hero from '../sections/Hero'
 import Locations from '../sections/Locations'
 import Schedule from '../sections/Schedule'
@@ -18,6 +20,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <Menu />
     <Hero data={data} />
     <Locations />
     <Schedule />
