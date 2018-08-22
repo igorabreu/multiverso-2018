@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
+import MobileSchedule from '../../components/MobileSchedule'
 
+import content from './content.js'
 import './style.scss'
 
-const Schedule = () => <div className="Schedule" />
-
+class Schedule extends Component {
+  render() {
+    return (
+      <div className="Schedule">
+        <MobileSchedule content={content} />
+      </div>
+    )
+  }
+}
 export default Schedule
