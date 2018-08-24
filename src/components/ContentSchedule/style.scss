@@ -1,0 +1,30 @@
+@import '../../styles/_variables';
+
+.ContentSchedule {
+  color: $white;
+  width: 100%;
+  margin-left: 20px;
+  position: relative;
+  .sub-location {
+    text-transform: lowercase;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    padding-bottom: 18px;
+  }
+  .activities {
+    border-top: 1px solid $white;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 290px;
+    height: 75%;
+    padding: 2vw 0;
+  }
+  .column {
+    width: 50%;
+    margin-right: 4px;
+    box-sizing: border-box;
+  }
+}

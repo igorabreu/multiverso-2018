@@ -5,8 +5,12 @@ function renderClassName(title) {
   switch (title) {
     case 'Saracura':
       return 'titleLeft'
-    case 'LabSônica':
+    case 'Lab Oi Futuro':
       return 'titleUpperLeft'
+    case 'Viaduto de Laranjeiras':
+      return 'titleDownLeft'
+    case 'Central do Brasil':
+      return 'titleBigger'
     default:
       return
   }

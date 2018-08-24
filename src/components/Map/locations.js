@@ -1,8 +1,8 @@
 const Locations = [
   {
     title: 'Oi Futuro',
-    lat: -22.9301048,
-    lng: -43.1770984,
+    lat: -22.9300069,
+    lng: -43.1766178,
   },
   {
     title: 'Praça Mauá',
@@ -30,12 +30,12 @@ const Locations = [
     lng: -43.1921904,
   },
   {
-    title: 'ETE Adolpho Bloch',
-    lat: -22.9074004,
-    lng: -43.2301464,
+    title: 'Viaduto de Laranjeiras',
+    lat: -22.9343474,
+    lng: -43.1843287,
   },
   {
-    title: 'LabSônica',
+    title: 'Lab Oi Futuro',
     lat: -22.9294866,
     lng: -43.1787014,
   },

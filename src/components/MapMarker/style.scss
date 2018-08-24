@@ -5,6 +5,7 @@
   width: auto;
   margin-top: 2px;
   font-weight: lighter;
+  font-size: 0.75rem;
   cursor: pointer;
   .marker {
     background-color: $cyan;
@@ -21,6 +22,16 @@
     transform: translate(-50px, -20px);
   }
   .titleUpperLeft {
-    transform: translate(-60px, -10px);
+    width: 70px;
+    transform: translate(-40px, -23px);
+  }
+  .titleDownLeft {
+    width: 70px;
+    transform: translate(-50px, 0px);
+    text-align: left;
+  }
+  .titleBigger {
+    width: 50px;
+    transform: translate(-15px, 5px);
   }
 }

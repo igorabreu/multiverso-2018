@@ -123,6 +123,14 @@ const mapProps = {
       ],
     },
     {
+      featureType: 'landscape.man_made',
+      stylers: [
+        {
+          visibility: 'off',
+        },
+      ],
+    },
+    {
       featureType: 'poi',
       elementType: 'geometry',
       stylers: [
@@ -163,7 +171,10 @@ const mapProps = {
       elementType: 'geometry.stroke',
       stylers: [
         {
-          visibility: 'off',
+          color: '#6e6e6e',
+        },
+        {
+          lightness: '0',
         },
       ],
     },
@@ -206,6 +217,24 @@ const mapProps = {
     {
       featureType: 'road.local',
       elementType: 'geometry',
+      stylers: [
+        {
+          color: '#141414',
+        },
+      ],
+    },
+    {
+      featureType: 'road.local',
+      elementType: 'geometry.stroke',
+      stylers: [
+        {
+          color: '#141414',
+        },
+      ],
+    },
+    {
+      featureType: 'road.local',
+      elementType: 'geometry.fill',
       stylers: [
         {
           color: '#141414',

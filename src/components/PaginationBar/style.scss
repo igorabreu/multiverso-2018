@@ -1,0 +1,19 @@
+@import '../../styles/_variables';
+
+.PaginationBar {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  li {
+    border: 1px solid $white;
+    padding: 0px 4px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .selected {
+    border: 1px solid $cyan;
+    color: $cyan;
+  }
+}

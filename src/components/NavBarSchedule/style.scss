@@ -1,0 +1,32 @@
+@import '../../styles/_variables';
+
+.NavBarSchedule {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+
+  .locationName {
+    border: 1px solid $white;
+    min-height: 20px;
+    padding: 3px 5px;
+    font-size: 0.8rem;
+    color: $white;
+    margin-right: 2vw;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &.selected {
+      color: $cyan;
+      border: 1px solid $cyan;
+    }
+
+    &:hover {
+      background: $cyan;
+      color: $black;
+      border: 1px solid $cyan;
+    }
+  }
+}

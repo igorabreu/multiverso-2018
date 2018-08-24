@@ -1,0 +1,101 @@
+@import '../../styles/_variables';
+
+.Footer {
+  background: #171717;
+  height: 100%;
+  width: 100vw;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2vh 5vw;
+  box-sizing: border-box;
+  h5 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  img {
+    margin-right: 1.4vw;
+    margin-left: 1.1vw;
+    margin-bottom: 10px;
+  }
+  .group-desktop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  @media (min-width: 768px) {
+    .cultural {
+      h5 {
+        margin-left: 15vw;
+      }
+    }
+  }
+  .info {
+    margin-top: 20vh;
+    margin-bottom: 45px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    .contact-email {
+      color: $cyan;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+  .production-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    .production {
+      margin-right: 30px;
+    }
+  }
+  .partner {
+    img {
+      transform: translateX(8px);
+    }
+  }
+  .sponsorship,
+  .production,
+  .partner,
+  .cultural {
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    .info {
+      margin-top: 19vh;
+      margin-bottom: 17vh;
+    }
+  }
+  // special for Iphone 5/SE
+  @media (max-width: 320px) {
+    .info {
+      margin-top: 24vh;
+      margin-bottom: 22px;
+    }
+    h5 {
+      font-size: 0.7rem;
+    }
+    img {
+      max-height: 30px;
+    }
+  }
+}

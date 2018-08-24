@@ -7,6 +7,7 @@ import Menu from '../components/Menu'
 import Hero from '../sections/Hero'
 import Locations from '../sections/Locations'
 import Schedule from '../sections/Schedule'
+import Footer from '../sections/Footer'
 
 import '../styles/base.scss'
 import './style.scss'
@@ -24,6 +25,7 @@ const Layout = ({ children, data }) => (
     <Hero data={data} />
     <Locations />
     <Schedule />
+    <Footer />
   </div>
 )
 

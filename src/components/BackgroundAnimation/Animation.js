@@ -13,8 +13,6 @@ const Animation = canvas => {
   const MAX_DIST = 100
   const NBR_PARTICULES = window.innerWidth / 8 - 10
 
-  canvas.addEventListener('rezise', onWindowResize())
-
   for (var i = 0; i < NBR_PARTICULES; i++) {
     var opts = {
       position: {
@@ -33,10 +31,6 @@ const Animation = canvas => {
   }
 
   start()
-
-  function onWindowResize(e) {
-    console.log(e)
-  }
 
   function start() {
     requestAnimationFrame(start)

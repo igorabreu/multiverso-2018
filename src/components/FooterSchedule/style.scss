@@ -1,0 +1,27 @@
+@import '../../styles/_variables';
+
+.FooterSchedule {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 15vw;
+  font-weight: lighter;
+  color: $white;
+  font-size: 0.8rem;
+  text-align: left;
+  width: 90%;
+  margin-top: 30px;
+  clear: both;
+  .informations {
+    width: 100%;
+    .classification {
+      color: $cyan;
+      max-width: 400px;
+    }
+    .entry-info {
+      max-width: 400px;
+    }
+  }
+  div {
+    margin-bottom: 3px;
+  }
+}

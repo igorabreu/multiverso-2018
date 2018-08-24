@@ -14,7 +14,7 @@
     font-size: 1.1rem;
   }
   .header {
-    margin-top: 8vh;
+    margin-top: 7vh;
     .location-name {
       display: inline-flex;
       flex-direction: row;
@@ -26,6 +26,9 @@
         text-transform: uppercase;
         font-weight: normal;
         font-size: 1.6rem;
+      }
+      @media (max-width: 320px) {
+        width: 120px;
       }
     }
     .activities-category {
@@ -42,7 +45,7 @@
   .content-schedule {
     margin-top: 30px;
     width: 90vw;
-    height: 300px;
+    height: 332px;
     .sub-location {
       border-bottom: 1px solid #fff;
       font-size: 1.4rem;
@@ -57,23 +60,6 @@
       min-height: 288px;
       position: relative;
       animation: fadeInRight 1s;
-      .pagination-bar {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0px;
-        li {
-          border: 1px solid $white;
-          padding: 0px 4px;
-          margin-right: 12px;
-          cursor: pointer;
-        }
-        .selected {
-          border: 1px solid $cyan;
-          color: $cyan;
-        }
-      }
     }
   }
   @keyframes fadeInRight {

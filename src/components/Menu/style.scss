@@ -2,16 +2,26 @@
 
 .Menu {
   position: fixed;
-  top: 2rem;
+  top: 2.1rem;
   right: 2rem;
   color: $white;
   list-style: none;
-  z-index: 999;
+  z-index: 998;
   font-size: 1.1rem;
   font-weight: normal;
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  &:focus {
+    outline: none;
+  }
   li {
-    letter-spacing: 4%;
-    line-height: 35px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    z-index: 999;
+  }
+  .onViewPort {
+    color: $cyan;
   }
 }

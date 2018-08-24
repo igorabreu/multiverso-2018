@@ -2,64 +2,25 @@
 
 .MobileSchedule {
   height: 100vh;
-  width: 300%;
+  width: 900%;
   position: relative;
   color: $white;
-  .slider {
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  .instructions {
+    position: absolute;
+    bottom: 20px;
     width: 100vw;
-    height: 100%;
-    float: left;
-    padding-left: 5vw;
-    box-sizing: border-box;
-    .location-button {
-      border: 1px solid $white;
-      padding: 5px 10px;
-      display: inline-block;
-      margin-top: 30px;
-      font-size: 1.1rem;
-    }
-    .header {
-      margin-top: 15vh;
-      .location-name {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: baseline;
-        border-bottom: 1px solid $white;
-        padding-bottom: 6px;
-        margin-bottom: 5px;
-        .title-location {
-          text-transform: uppercase;
-          font-weight: normal;
-          font-size: 1.6rem;
-        }
-      }
-      .activities-category {
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        line-height: 2.6rem;
-      }
-      .dates {
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        font-weight: normal;
-      }
-    }
-    .content-schedule {
-      margin-top: 30px;
-      width: 90vw;
-      background: red;
-      height: 50vh;
-      .sub-location {
-        border-bottom: 1px solid #fff;
-        font-size: 1.4rem;
-        padding-bottom: 3px;
-        text-transform: lowercase;
-        font-weight: normal;
-      }
-      .activities {
-        box-sizing: border-box;
-        padding: 3vw;
-      }
+    text-align: center;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    @media (max-width: 320px) {
+      bottom: 0px;
     }
   }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
+
+//transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+//transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
