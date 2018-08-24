@@ -11,7 +11,12 @@ class Menu extends Component {
   }
 
   onClick = numberSection => {
-    const endY = numberSection * window.innerHeight
+    const ua = navigator.userAgent.toLowerCase()
+    const isAndroid = ua.indexOf('android') > -1
+    let endY = numberSection * window.innerHeight
+    if (isAndroid) {
+      endY = endY + 130
+    }
     smoothScroll(0, endY, 1600)
   }
 
