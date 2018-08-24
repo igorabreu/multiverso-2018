@@ -37,13 +37,15 @@ class Menu extends Component {
 
   render() {
     const { numberSection } = this.state
+    const { openAbout } = this.props
     return (
       <ul className="Menu">
+        <li onClick={() => openAbout()}>Sobre</li>
         <li
           className={numberSection === 1 ? 'onViewPort' : ''}
           onClick={() => this.onClick(1)}
         >
-          Conheça
+          Locais
         </li>
         <li
           className={numberSection === 2 ? 'onViewPort' : ''}

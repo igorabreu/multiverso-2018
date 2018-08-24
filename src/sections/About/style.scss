@@ -1,0 +1,48 @@
+@import '../../styles/_variables.scss';
+
+.About {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $black;
+  font-size: 1.2rem;
+  z-index: 9999999;
+  width: 100vw;
+  height: 100%;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+  overflow: hidden;
+  filter: bluer(5px);
+
+  .description {
+    width: 80%;
+    font-weight: normal;
+    max-width: 700px;
+    line-height: 2.5em;
+    // for iphone 5/SE
+    @media (max-width: 320px) {
+      line-height: 2em;
+    }
+    .line-spaced {
+      letter-spacing: 0.5rem;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+    .emphase {
+      color: $cyan;
+    }
+  }
+
+  .close-icon {
+    color: $white;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+  }
+}
