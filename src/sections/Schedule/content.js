@@ -1,8 +1,8 @@
 const content = [
   {
     locationName: 'Oi Futuro',
-    subLocation: 'Teatro',
-    activityCategory: 'Masterclasses',
+    subLocation: 'Térreo e Teatro',
+    activityCategory: 'Abertura e Masterclasses',
     weekDays: 'quartas-feiras',
     addressInfo:
       'Rua Dois de Dezembro, 63, Nível 5, Flamengo | Telefone: (21) 3131-3060',
@@ -10,6 +10,23 @@ const content = [
     entryInfo:
       'Acesso gratuito mediante retirada de senha na bilheteria com 30 minutos de antecedência. Sujeito à lotação.',
     activities: [
+      [
+        {
+          date: 'Abertura - 08/09 (SÁB) - 17h a 22h',
+          activityTitle: 'KINETIC DANCE',
+          proponent: 'Kinetic.Lab',
+        },
+        {
+          date: 'Abertura - 08/09 (SÁB) - 17h a 22h',
+          activityTitle: 'LUDOTECNIA',
+          proponent: 'Jorge Crowe',
+        },
+        {
+          date: 'Abertura - 08/09 (SÁB) - 17h a 22h',
+          activityTitle: 'Música',
+          proponent: 'DJ Bruno Eppinghaus',
+        },
+      ],
       [
         {
           date: '26/09 - 19h a 21h',
@@ -45,27 +62,10 @@ const content = [
   {
     locationName: 'Saracura',
     subLocation: '',
-    activityCategory: 'Abertura e Palestra',
+    activityCategory: 'Palestra',
     weekDays: 'domingo e segunda',
     addressInfo: 'Rua Sacadura Cabral, 219, Centro',
     activities: [
-      [
-        {
-          date: 'Abertura - 09/09 (DOM) - 17h a 22h',
-          activityTitle: 'KINETIC DANCE',
-          proponent: 'Kinetic.Lab',
-        },
-        {
-          date: 'Abertura - 09/09 (DOM) - 17h a 22h',
-          activityTitle: 'LUDOTECNIA',
-          proponent: 'Jorge Crowe',
-        },
-        {
-          date: 'Abertura - 09/09 (DOM) - 17h a 22h',
-          activityTitle: 'Música',
-          proponent: 'DJ Bruno Eppinghaus',
-        },
-      ],
       [
         {
           date: '10/09 (SEG) - 19h',

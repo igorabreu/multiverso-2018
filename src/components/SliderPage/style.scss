@@ -35,6 +35,10 @@
       font-size: 1.1rem;
       text-transform: uppercase;
       line-height: 2.6rem;
+      @media (max-width: 320px) {
+        max-width: 100px;
+        line-height: 1.5rem;
+      }
     }
     .dates {
       font-size: 0.9rem;

@@ -44,7 +44,6 @@ const Footer = ({ data }) => (
     </div>
     <div className="cultural">
       <h5>Apoio Cultural</h5>
-      <img src={PortoMaravilha} />
       <img src={Supervia} />
       <img src={Imperator} />
       <img src={ArenaDicro} />
@@ -52,6 +51,7 @@ const Footer = ({ data }) => (
       <img src={Galpao} />
       <img src={Mirabilis} />
       <img src={Imersiva} />
+      <img src={PortoMaravilha} />
     </div>
   </div>
 )
