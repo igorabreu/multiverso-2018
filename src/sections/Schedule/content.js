@@ -49,7 +49,7 @@ const content = [
           date: '17/10 - 19h a 21h',
           activityTitle: 'Cultura Open Source e Arte',
           proponent:
-            'Adriano belisário e Cristina ribas, Mediação Thamyra Thâmara (Gatomídia) ',
+            'Adriano belisário e Cristina ribas, Mediação Thamyra Thâmara (Gatomídia)',
         },
         {
           date: '24/10 - 19h a 21h',
@@ -192,13 +192,13 @@ const content = [
         },
         {
           date: '20/10 (sáb) - 14h a 15:30h',
-          activityTitle: 'SINTETIZADORES COM PUREDATA',
-          proponent: 'Igor Abreu',
+          activityTitle: 'VIDEO-CENÁRIO E O PROCESSO CRIATIVO DO VJ',
+          proponent: 'VJ Lê Pantoja',
         },
         {
           date: '20/10 (sáb) - 16h a 17:30h',
-          activityTitle: 'VIDEO-CENÁRIO E O PROCESSO CRIATIVO DO VJ',
-          proponent: 'VJ Lê Pantoja',
+          activityTitle: 'SINTETIZADORES COM PUREDATA',
+          proponent: 'Igor Abreu',
         },
       ],
     ],
