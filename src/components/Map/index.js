@@ -12,7 +12,7 @@ import AnimatedTitle from '../AnimatedTitle'
 class Map extends Component {
   static defaultProps = {
     ...mapProps,
-  }z
+  }
   render() {
     const { zoom, center, styles } = this.props
     if (process.env.API_KEY_GOOGLE_MAPS) {
