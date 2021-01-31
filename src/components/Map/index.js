@@ -8,15 +8,25 @@ import AnimatedGraphism from '../AnimatedGraphism'
 import './style.scss'
 import AnimatedTitle from '../AnimatedTitle'
 
-const API_KEY = process.env.API_KEY_GOOGLE_MAPS
 class Map extends Component {
   static defaultProps = {
     ...mapProps,
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      API_KEY: undefined,
+    }
+  }
+
+  componentDidMount() {
+    setState({ API_KEY: process.env.API_KEY_GOOGLE_MAPS })
+  }
+
   render() {
     const { zoom, center, styles } = this.props
-    if (API_KEY) {
+    if (this.state.API_KEY) {
       return (
         <div className="Map">
           <div className="taglines">
@@ -26,7 +36,7 @@ class Map extends Component {
           <AnimatedGraphism />
           <AnimatedTitle />
           <GoogleMapReact
-            bootstrapURLKeys={{ key: API_KEY }}
+            bootstrapURLKeys={{ key: this.state.API_KEY }}
             defaultCenter={center}
             defaultZoom={zoom}
             options={{
