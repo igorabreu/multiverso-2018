@@ -4,15 +4,16 @@ import GoogleMapReact from 'google-map-react'
 import MapMarker from '../MapMarker'
 import mapProps from './mapProps.js'
 import locations from './locations'
-import { API_KEY } from '../../utils/credentials.js'
 import AnimatedGraphism from '../AnimatedGraphism'
 import './style.scss'
 import AnimatedTitle from '../AnimatedTitle'
 
+const API_KEY = process.env.API_KEY_GOOGLE_MAPS
 class Map extends Component {
   static defaultProps = {
     ...mapProps,
   }
+
   render() {
     const { zoom, center, styles } = this.props
     if (API_KEY) {
