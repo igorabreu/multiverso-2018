@@ -1,6 +1,6 @@
 ## Multiveso
 
-Multiverso festival website.
+Multiverso festival website - 2018 edition.
 
 Built with React and Gatsby.
 
