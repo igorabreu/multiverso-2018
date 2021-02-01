@@ -14,7 +14,7 @@ class Map extends Component {
   }
   render() {
     const { zoom, center, styles } = this.props
-    if (process.env.API_KEY_GOOGLE_MAPS) {
+    if (process.env.GATSBY_API_KEY_GOOGLE_MAPS) {
       return (
         <div className="Map">
           <div className="taglines">
@@ -24,7 +24,9 @@ class Map extends Component {
           <AnimatedGraphism />
           <AnimatedTitle />
           <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.API_KEY_GOOGLE_MAPS }}
+            bootstrapURLKeys={{
+              key: process.env.GATSBY_API_KEY_GOOGLE_MAPS,
+            }}
             defaultCenter={center}
             defaultZoom={zoom}
             options={{
